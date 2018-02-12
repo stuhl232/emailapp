@@ -11,11 +11,11 @@ payload = '''{
         "ToEmail": [
             {
                 "Email": "stuart.h.longley@gmail.com",
-                "Name": "To Name"
+                "Name": "Mr. Longley"
             }
         ],
-        "Subject": "Subject goes here",
-        "HtmlContent": "Html body goes here" 
+        "Subject": "This is an email",
+        "HtmlContent": "Hi I would love to buy you a donut <br> Check this out: https://www.paylite.net"
     }'''
 headers = {'Content-Type': 'application/json'}
 
