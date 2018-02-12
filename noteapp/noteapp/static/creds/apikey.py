@@ -1,23 +1,25 @@
 import requests
 
+apikey = '"7ad86c93d9b344b0bc4db49ded1311709c244048991740039de7d36638618530"'
 url = "https://messagingapis.paylite.net/api/email/send"
 
-payload = '''{
-    "ApiKey": "7ad86c93d9b344b0bc4db49ded1311709c244048991740039de7d36638618530",
-    "FromEmail": {
-        "Email": "stuphikappa@gmail.com",
-        "Name": "Stu"
+payload = '''{ ApiKey:''' + apikey + ''',
+    FromEmail: {
+        Email: 'stuphikappa@gmail.com',
+        Name: 'Stu'
         },
-        "ToEmail": [
+        ToEmail: [
             {
-                "Email": "stuart.h.longley@gmail.com",
-                "Name": "Mr. Longley"
+                Email: 'stuart.h.longley@gmail.com',
+                Name: 'Mr. Longley'
             }
         ],
-        "Subject": "This is an email",
-        "HtmlContent": "Hi I would love to buy you a donut <br> Check this out: https://www.paylite.net"
+        Subject: 'sand is for',
+        HtmlContent: 'Beaches'
     }'''
 headers = {'Content-Type': 'application/json'}
+
+print (payload)
 
 response = requests.request("POST", url, data=payload, headers=headers)
 
