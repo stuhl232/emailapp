@@ -1,0 +1,31 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    <form method="POST" class="noteform">
+        <label for="sender">
+            from email:
+            <textarea name="senderaddress" id="senderaddress"></textarea>
+        </label>
+        <label for="sendername">
+            from name:
+            <textarea name="sendername" id="sendername"></textarea>
+        </label>
+        <label for="receiver">
+            to email:
+            <textarea name="receiveraddress" id="receiveraddress"></textarea>
+        </label>
+        <label for="toname">
+            to name:
+            <textarea name="toname" id="toname"></textarea>
+        </label>
+        <label for="subjecttext">
+            email subject
+            <textarea name="emailsubject" id="emailsubject"></textarea>
+        </label>
+        <label for="notetext">
+            email body
+            <textarea name="emailtext" id="emailtext"></textarea>
+        </label>
+        <input type="submit" name="sendemail" value="Save">
+    </form>
+{% endblock %}

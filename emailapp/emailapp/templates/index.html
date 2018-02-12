@@ -1,0 +1,11 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    <div class="notelist">
+        {% for email in emails %}
+            <div class="note">
+                <p>{{ email }}</p>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}
